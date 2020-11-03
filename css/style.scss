@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Literata',serif;
+    transition: .3s;
+    box-sizing: border-box;
+}
+$lightblue: #2892d5;
+$darkblue: #160d5d;
+.link{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    padding: 10px 15px;
+    border: 0;
+}
+.grid-horizontal{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-priamry{
+    background-color: white;
+    color: $lightblue;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.btn:active{
+    border: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.menu{
+    list-style: none;
+}
+.menu-horizontal{
+    display: flex;
+    padding: 15px 0;
+    .list-item{
+        margin-right: 35px;
+        .link{
+            color: white;
+            font-weight: bold;
+        }
+        .link:hover{
+            color: lighten($lightblue,10%);
+        }
+    }
+}
+.card__elem{
+    text-align: center;
+    width: 330px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px lighten($lightblue,30%);
+    .card__title{
+        margin: 15px 0;
+    }
+    .card__img{
+        height: 230px;
+        width: 200px;
+    }
+}
+.card__elem:hover{
+    box-shadow: 1px 1px 15px 2px $lightblue;
+    transform: scale(1.02);
+}
+.header{
+    .header__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        .logo{
+            font-weight: bold;
+            font-size: 30px;
+            a{
+                color: $darkblue;
+            }
+            #logo-span{
+                color: $lightblue;
+            }
+        }
+        .info__block_snippent{
+            display: flex;
+            .snippet{
+                margin-right: 35px;
+            }
+            .snippet:hover a,i{
+                color: $lightblue;
+            }
+        }
+    }
+    .header__navigation{
+        background-color: #1E69B8;
+
+    }
+}
+.black-block{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.banner{
+    height: 50vh;
+    margin-bottom: 100px;
+    background-image: url("https://gazeta-echo.ru/wp-content/uploads/2020/09/metal-construction.jpg");
+    background-size: cover;
+    position: relative;
+
+    .banner__pre-text{
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 28px;
+        .banner__text{
+            margin-bottom: 85px;
+        }
+    }
+    .user-request{
+        position: relative;
+        margin-top: -60px;
+        width: 100%;
+        text-align: center;
+        border-radius: 20px;
+        padding: 20px 0;
+        background-color: lighten(#1E69B8,5%);
+        h2{
+            margin-bottom: 10px;
+            color: white;
+        }
+        .form{
+            .form-control{
+                margin-right: 50px;
+                padding: 7px;
+                outline: none;
+                border-radius: 10px;
+                border: 0;
+            }
+        }
+    }
+}
+.servicies{
+    margin-bottom: 50px;
+    .serv__card{
+        margin-top: 30px;
+    }
+}
+.whywe{
+    position: relative;
+    background-image: url('/images/whywe.jpg');
+    background-size: cover;
+    background-clip: border-box;
+    padding: 50px 0;
+    margin-bottom: 40px;
+    color: white;
+    font-weight: bold;
+    h2{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .why__elem{
+        position: relative;
+        text-align: center;
+        i{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.cost_of_serv{
+    margin-bottom: 40px;
+    h2{
+        margin-bottom: 30px;
+    }
+    .card{
+        position: relative;
+        // box-shadow: 1px 1px 5px 1px lighten($lightblue,30%);
+        border-bottom: 3px solid white;
+        padding: 10px;
+        text-align: center;
+        .card-img{
+            width: 250px;
+            height: 170px;
+        }
+        .dropdown-info{
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            opacity: 0;
+            .btn{
+                background: $lightblue;
+                color: white;
+                font-weight: bold;
+                border-radius: 10px;
+            }
+        }
+    }
+    .card:hover{
+        // box-shadow: 1px 1px 15px 2px $lightblue;
+        transition: 0s;
+        border-bottom: 3px solid $lightblue;
+    }
+    .card:hover .dropdown-info{
+        width: 100%;
+        height: 100%;
+        background: rgba(250, 250, 250, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        opacity: 1;
+        padding-top: 45%;
+    }
+}
