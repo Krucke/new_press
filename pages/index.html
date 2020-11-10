@@ -3,6 +3,7 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Производство полимерного оборудования</title>
+        <link rel="stylesheet" href="/css/product.min.css" type="text/css">
         <link rel="stylesheet" href="/css/style.min.css" type="text/css">
         <link rel="stylesheet" href="/slick/slick.css">
         <link rel="stylesheet" href="/slick/slick-theme.css">
@@ -21,6 +22,8 @@
         <script src="/js/DopServ.js" charset="utf-8"></script>
         <script src="/js/getCall.js" charset="utf-8"></script>
         <script src="/js/collapse.js" charset="utf-8"></script>
+        <script src="/js/serv.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     </head>
     <body class="page">
         <div class="popup-fade">
@@ -28,9 +31,9 @@
                 <form class="form form-popup" action="index.html" method="post">
                     <i class="fas fa-times" id="close_modal"></i>
                     <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время!</h3>
-                    <input type="text" name="" value="" placeholder="Имя" class="form-control">
-                    <input type="text" name="" value="" placeholder="Телефон" class="form-control">
-                    <input type="text" name="" value="" placeholder="Мыло" class="form-control">
+                    <input type="text" name="name" placeholder="Имя" class="form-control">
+                    <input type="text" name="phone" placeholder="Телефон" class="form-control">
+                    <input type="text" name="email" placeholder="Мыло" class="form-control">
                     <textarea name="name" rows="8" cols="80" placeholder="Ваш комментарий" class="form-control"></textarea>
                     <p>Отправляя данные, Вы соглашаетесь с политикой конфиденциальности и условиями сайта</p>
                     <button type="button" name="button" id="submit" class="btn btn-primary">Отправить</button>
@@ -119,7 +122,7 @@
                             </li>
                             <li class="list-item parent"><a href="/pages/information.html" class="link">Информация</a>
                                 <ul class="menu child">
-                                    <li class="child-item"><a href="" class="link">Статьи</a></li>
+                                    <li class="child-item"><a href="/pages/posts.html" class="link">Статьи</a></li>
                                     <li class="child-item"><a href="" class="link">Видео</a></li>
                                     <li class="child-item"><a href="" class="link">Гарантии</a></li>
                                     <li class="child-item"><a href="" class="link">Портфолио</a></li>
@@ -201,19 +204,19 @@
                 <h2>Почему мы?</h2>
                 <div class="grid-horizontal">
                     <div class="why__elem">
-                        <i class="far fa-gem"></i>
+                        <i class="fas fa-users"></i>
                         <p>Опытные специалисты</p>
                     </div>
                     <div class="why__elem">
-                        <i class="far fa-gem"></i>
+                        <i class="fas fa-handshake"></i>
                         <p>Гарантия качества</p>
                     </div>
                     <div class="why__elem">
-                        <i class="far fa-gem"></i>
+                        <i class="fas fa-money-bill-alt"></i>
                         <p>Доступные цены</p>
                     </div>
                     <div class="why__elem">
-                        <i class="far fa-gem"></i>
+                        <i class="fas fa-history"></i>
                         <p>Работаем 24/7</p>
                     </div>
                 </div>
@@ -228,7 +231,7 @@
                         <h4>Капитальный ремонт</h4>
                         <span>от 5000 руб</span>
                         <div class="dropdown-info">
-                            <a href="#" class="btn btn-primary link">Заказать</a>
+                            <button class="btn btn-primary link show">Заказать</button>
                         </div>
                     </div>
                     <div class="card">
@@ -236,7 +239,7 @@
                         <h4>Диагностика</h4>
                         <span>от 1000 руб</span>
                         <div class="dropdown-info">
-                            <a href="#" class="btn btn-primary link">Заказать</a>
+                            <button class="btn btn-primary link show">Заказать</button>
                         </div>
                     </div>
                     <div class="card">
@@ -244,7 +247,7 @@
                         <h4>Выезд специалиста</h4>
                         <span>от 500 руб</span>
                         <div class="dropdown-info">
-                            <a href="#" class="btn btn-primary link">Заказать</a>
+                            <button class="btn btn-primary link show">Заказать</button>
                         </div>
                     </div>
                     <div class="card">
@@ -252,7 +255,7 @@
                         <h4>Составление КД</h4>
                         <span>от 2000 руб</span>
                         <div class="dropdown-info">
-                            <a href="#" class="btn btn-primary link">Заказать</a>
+                            <button class="btn btn-primary link show">Заказать</button>
                         </div>
                     </div>
                     <div class="card">
@@ -260,7 +263,7 @@
                         <h4>Ремонт гидравлики</h4>
                         <span>от 500 руб</span>
                         <div class="dropdown-info">
-                            <a href="#" class="btn btn-primary link">Заказать</a>
+                            <button class="btn btn-primary link show">Заказать</button>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $('#submits').click(function(e){
         e.preventDefault();
         $('.form-call').children('.form-control').each(function(i){
@@ -8,7 +9,8 @@ $(document).ready(function(){
         });
         $('.form-call').children('.form-control').keydown(function(){
             $(this).removeClass('red');
-        })
+        });
+        
         if($('.form-call').children('.form-control').hasClass('red')){
             return false;
         }

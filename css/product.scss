@@ -1,0 +1,98 @@
+$lightblue: #2892d5;
+$darkblue: #160d5d;
+$niceblue: #1E69B8;
+.other-products{
+    padding: 5px;
+    border-radius: 20px;
+    .main{
+        text-align: center;
+        .sl-other-prod{
+            .sl_slider{
+                width: 250px !important;
+                text-align: center;
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+                .link{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+.product{
+    margin-bottom: 30px;
+    .charac{
+        width: 100%;
+        .table{
+            text-align: center;
+            border: 0;
+            width: 100%;
+            tbody tr:nth-child(even){
+                background: rgba(30, 105, 184, 0.22);
+            }
+            tbody td{
+                padding: 15px;
+            }
+        }
+    }
+    .btn-primary{
+        background: $niceblue !important;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .product__top{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .top__icons{
+            display: flex;
+            flex-direction: column;
+            .icons__pre-img{
+                margin-bottom: 40px;
+                img{
+                    width: 300px;
+                    height: 250px;
+                }
+            }
+            .main{
+                width: 300px;
+                height: 70px;
+                img{
+                    width: 70px;
+                    height: 70px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .top__info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 350px;
+            justify-content: flex-start;
+            .price{
+                color: $niceblue;
+                font-weight: bold;
+                font-size: 22px;
+            }
+        }
+    }
+    .snip{
+        width: 100%;
+        margin: 30px 0;
+        .menu{
+            li{
+                i{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}

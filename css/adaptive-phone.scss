@@ -15,16 +15,117 @@ $niceblue: #1E69B8;
     display: none;
 }
 @media screen and (max-width: 500px){
+    *{
+        font-size: 16px;
+    }
+    .video{
+        .grid-horizontal{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .news-fuller{
+        .newss{
+            .big-item{
+                .news__img{
+                    img{
+                        height: 250px;
+                    }
+                }
+            }
+            .qq{
+                flex-direction: column;
+                .news__item{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .posts{
+        .post{
+            .post__img{
+                height: 170px;
+            }
+            .post__title{
+                h2{
+                    font-size: 16px;
+                }
+            }
+            .dropdown-post{
+                display: none;
+            }
+        }
+    }
+    .img-fade{
+        display: none;
+    }
+    .other-products{
+        h2{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .main{
+            text-align: center;
+            height: 150px;
+            .sl-other-prod{
+                text-align: center;
+                .sl_slider{
+                    // width: 250px !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    text-align: center;
+                    img{
+                        width: 150px !important;
+                        height: 120px !important;
+                    }
+                }
+            }
+        }
+    }
+    .article{
+        .contents{
+            flex-direction: column;
+            .header__img{
+                height: 150px !important;
+            }
+        }
+    }
     .img-map{
         width: 100%;
         height: 200px;
     }
+    .product{
+        .product__top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .top__icons{
+                display: flex;
+                align-items: center;
+                .icons__pre-img{
+                    img{
+                        width: 200px !important;
+                        height: 200px !important;
+                    }
+                }
+            }
+        }
+    }
     .card-shadowed{
         margin-bottom: 25px;
     }
+    .snip{
+        .grid-horizontal{
+            flex-direction: column;
+            i{
+                width: 16px;
+            }
+        }
+    }
     #modalShow{
         left: 5%;
-        top: 10%;
+        top: 3%;
         .form-popup{
             width: 100%;
             max-width: 280px;
